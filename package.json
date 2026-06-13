@@ -1,0 +1,14 @@
+{
+  "name": "predict26",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n BACKEND,FRONTEND -c cyan,magenta \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd BACKEND && npm run start:dev",
+    "dev:frontend": "cd FRONTEND && npm run dev",
+    "install:all": "cd BACKEND && npm install && cd ../FRONTEND && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

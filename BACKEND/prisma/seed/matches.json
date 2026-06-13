@@ -1,0 +1,27 @@
+[
+  { "homeTeamShortName": "MEX", "awayTeamShortName": "ARG", "stadiumName": "Estadio Azteca",          "phase": "GROUP", "groupName": "B", "matchday": 1, "scheduledAt": "2026-06-11T20:00:00Z" },
+  { "homeTeamShortName": "USA", "awayTeamShortName": "MAR", "stadiumName": "MetLife Stadium",          "phase": "GROUP", "groupName": "A", "matchday": 1, "scheduledAt": "2026-06-12T00:00:00Z" },
+  { "homeTeamShortName": "ESP", "awayTeamShortName": "ECU", "stadiumName": "AT&T Stadium",             "phase": "GROUP", "groupName": "F", "matchday": 1, "scheduledAt": "2026-06-12T17:00:00Z" },
+  { "homeTeamShortName": "FRA", "awayTeamShortName": "AUS", "stadiumName": "Mercedes-Benz Stadium",    "phase": "GROUP", "groupName": "D", "matchday": 1, "scheduledAt": "2026-06-13T17:00:00Z" },
+  { "homeTeamShortName": "BRA", "awayTeamShortName": "CMR", "stadiumName": "SoFi Stadium",             "phase": "GROUP", "groupName": "G", "matchday": 1, "scheduledAt": "2026-06-13T20:00:00Z" },
+  { "homeTeamShortName": "GER", "awayTeamShortName": "JPN", "stadiumName": "AT&T Stadium",             "phase": "GROUP", "groupName": "E", "matchday": 1, "scheduledAt": "2026-06-14T17:00:00Z" },
+  { "homeTeamShortName": "POR", "awayTeamShortName": "GHA", "stadiumName": "Arrowhead Stadium",        "phase": "GROUP", "groupName": "H", "matchday": 1, "scheduledAt": "2026-06-14T20:00:00Z" },
+  { "homeTeamShortName": "NED", "awayTeamShortName": "EGY", "stadiumName": "Levi's Stadium",           "phase": "GROUP", "groupName": "I", "matchday": 1, "scheduledAt": "2026-06-15T17:00:00Z" },
+  { "homeTeamShortName": "ENG", "awayTeamShortName": "SEN", "stadiumName": "MetLife Stadium",          "phase": "GROUP", "groupName": "J", "matchday": 1, "scheduledAt": "2026-06-15T20:00:00Z" },
+  { "homeTeamShortName": "ITA", "awayTeamShortName": "IRN", "stadiumName": "Gillette Stadium",         "phase": "GROUP", "groupName": "K", "matchday": 1, "scheduledAt": "2026-06-16T17:00:00Z" },
+  { "homeTeamShortName": "CRO", "awayTeamShortName": "NGA", "stadiumName": "BMO Field",                "phase": "GROUP", "groupName": "L", "matchday": 1, "scheduledAt": "2026-06-16T20:00:00Z" },
+  { "homeTeamShortName": "BEL", "awayTeamShortName": "TUN", "stadiumName": "Lincoln Financial Field",  "phase": "GROUP", "groupName": "F", "matchday": 1, "scheduledAt": "2026-06-17T17:00:00Z" },
+
+  { "homeTeamShortName": "PAN", "awayTeamShortName": "BOL", "stadiumName": "Estadio Akron",            "phase": "GROUP", "groupName": "A", "matchday": 1, "scheduledAt": "2026-06-17T20:00:00Z" },
+  { "homeTeamShortName": "CAN", "awayTeamShortName": "ALB", "stadiumName": "BMO Field",                "phase": "GROUP", "groupName": "B", "matchday": 1, "scheduledAt": "2026-06-18T17:00:00Z" },
+  { "homeTeamShortName": "URU", "awayTeamShortName": "UKR", "stadiumName": "Arrowhead Stadium",        "phase": "GROUP", "groupName": "C", "matchday": 1, "scheduledAt": "2026-06-18T20:00:00Z" },
+  { "homeTeamShortName": "MEX", "awayTeamShortName": "IRQ", "stadiumName": "Estadio Azteca",           "phase": "GROUP", "groupName": "C", "matchday": 1, "scheduledAt": "2026-06-19T17:00:00Z" },
+  { "homeTeamShortName": "SUI", "awayTeamShortName": "DOM", "stadiumName": "Seattle Lumen Field",      "phase": "GROUP", "groupName": "G", "matchday": 1, "scheduledAt": "2026-06-19T20:00:00Z" },
+  { "homeTeamShortName": "POL", "awayTeamShortName": "SRB", "stadiumName": "Lincoln Financial Field",  "phase": "GROUP", "groupName": "L", "matchday": 1, "scheduledAt": "2026-06-20T17:00:00Z" },
+  { "homeTeamShortName": "KOR", "awayTeamShortName": "VEN", "stadiumName": "SoFi Stadium",             "phase": "GROUP", "groupName": "I", "matchday": 1, "scheduledAt": "2026-06-20T20:00:00Z" },
+  { "homeTeamShortName": "COL", "awayTeamShortName": "TUR", "stadiumName": "AT&T Stadium",             "phase": "GROUP", "groupName": "H", "matchday": 1, "scheduledAt": "2026-06-21T17:00:00Z" },
+  { "homeTeamShortName": "GUA", "awayTeamShortName": "KSA", "stadiumName": "Estadio Akron",            "phase": "GROUP", "groupName": "D", "matchday": 1, "scheduledAt": "2026-06-21T20:00:00Z" },
+  { "homeTeamShortName": "CRC", "awayTeamShortName": "NZL", "stadiumName": "Levi's Stadium",           "phase": "GROUP", "groupName": "E", "matchday": 1, "scheduledAt": "2026-06-22T17:00:00Z" },
+  { "homeTeamShortName": "PAR", "awayTeamShortName": "MXB", "stadiumName": "MetLife Stadium",          "phase": "GROUP", "groupName": "J", "matchday": 1, "scheduledAt": "2026-06-22T20:00:00Z" },
+  { "homeTeamShortName": "PER", "awayTeamShortName": "MLI", "stadiumName": "Mercedes-Benz Stadium",    "phase": "GROUP", "groupName": "K", "matchday": 1, "scheduledAt": "2026-06-23T17:00:00Z" }
+]

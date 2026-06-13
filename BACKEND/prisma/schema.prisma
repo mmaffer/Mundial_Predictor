@@ -1,0 +1,207 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Enums ────────────────────────────────────────────────────────────────────
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum MatchStatus {
+  SCHEDULED
+  LIVE
+  FINISHED
+  CANCELLED
+}
+
+enum MatchPhase {
+  GROUP
+  ROUND_OF_32
+  ROUND_OF_16
+  QUARTER_FINAL
+  SEMI_FINAL
+  THIRD_PLACE
+  FINAL
+}
+
+enum PredictionStatus {
+  PENDING
+  SCORED
+}
+
+// ─── Models ───────────────────────────────────────────────────────────────────
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  username     String    @unique
+  firstName    String
+  lastName     String?
+  passwordHash String
+  role         Role      @default(USER)
+  avatarUrl    String?
+  country      String?
+  totalPoints  Int       @default(0)
+  streak       Int       @default(0)
+  maxStreak    Int       @default(0)
+  globalRank   Int?
+  isActive     Boolean   @default(true)
+  isBanned     Boolean   @default(false)
+  bannedAt     DateTime?
+  bannedReason String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  deletedAt    DateTime?
+
+  predictions  Prediction[]
+  roomMembers  RoomMember[]
+  scoreHistory ScoreHistory[]
+  createdRooms Room[]         @relation("RoomCreator")
+
+  @@index([totalPoints(sort: Desc)])
+  @@index([email])
+  @@index([username])
+}
+
+model Team {
+  id            String   @id @default(cuid())
+  name          String   @unique
+  shortName     String   @unique
+  flagEmoji     String
+  flagUrl       String?
+  groupName     String
+  confederation String
+  createdAt     DateTime @default(now())
+
+  homeMatches Match[] @relation("HomeTeam")
+  awayMatches Match[] @relation("AwayTeam")
+
+  @@index([groupName])
+}
+
+model Stadium {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  city      String
+  country   String
+  capacity  Int
+  createdAt DateTime @default(now())
+
+  matches Match[]
+}
+
+model Match {
+  id          String      @id @default(cuid())
+  homeTeamId  String
+  awayTeamId  String
+  stadiumId   String?
+  phase       MatchPhase  @default(GROUP)
+  groupName   String?
+  matchday    Int?
+  scheduledAt DateTime
+  status      MatchStatus @default(SCHEDULED)
+
+  homeScore       Int?
+  awayScore       Int?
+  homeScoreET     Int?
+  awayScoreET     Int?
+  homePenalties   Int?
+  awayPenalties   Int?
+  resultUpdatedAt DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  homeTeam    Team         @relation("HomeTeam", fields: [homeTeamId], references: [id])
+  awayTeam    Team         @relation("AwayTeam", fields: [awayTeamId], references: [id])
+  stadium     Stadium?     @relation(fields: [stadiumId], references: [id])
+  predictions Prediction[]
+
+  @@index([scheduledAt])
+  @@index([status])
+  @@index([groupName])
+  @@index([phase])
+}
+
+model Prediction {
+  id            String           @id @default(cuid())
+  userId        String
+  matchId       String
+  homeScore     Int
+  awayScore     Int
+  submittedAt   DateTime         @default(now())
+  isEarlyBonus  Boolean          @default(false)
+  status        PredictionStatus @default(PENDING)
+
+  pointsExact  Int @default(0)
+  pointsWinner Int @default(0)
+  pointsDiff   Int @default(0)
+  pointsEarly  Int @default(0)
+  pointsStreak Int @default(0)
+  totalPoints  Int @default(0)
+
+  user  User  @relation(fields: [userId], references: [id])
+  match Match @relation(fields: [matchId], references: [id])
+
+  @@unique([userId, matchId])
+  @@index([userId])
+  @@index([matchId])
+  @@index([status])
+}
+
+model Room {
+  id         String   @id @default(cuid())
+  name       String
+  code       String   @unique
+  isPrivate  Boolean  @default(true)
+  maxMembers Int      @default(20)
+  creatorId  String
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  createdBy User       @relation("RoomCreator", fields: [creatorId], references: [id])
+  members   RoomMember[]
+
+  @@index([code])
+  @@index([isPrivate])
+}
+
+model RoomMember {
+  id         String   @id @default(cuid())
+  roomId     String
+  userId     String
+  roomPoints Int      @default(0)
+  roomRank   Int?
+  joinedAt   DateTime @default(now())
+
+  room Room @relation(fields: [roomId], references: [id])
+  user User @relation(fields: [userId], references: [id])
+
+  @@unique([roomId, userId])
+  @@index([roomId])
+  @@index([userId])
+  @@index([roomPoints(sort: Desc)])
+}
+
+model ScoreHistory {
+  id        String   @id @default(cuid())
+  userId    String
+  matchId   String?
+  points    Int
+  reason    String
+  detail    String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([createdAt(sort: Desc)])
+}

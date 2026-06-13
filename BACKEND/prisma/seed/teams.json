@@ -1,0 +1,61 @@
+[
+  { "name": "Estados Unidos",  "shortName": "USA", "flagEmoji": "🇺🇸", "groupName": "A", "confederation": "CONCACAF" },
+  { "name": "Panamá",          "shortName": "PAN", "flagEmoji": "🇵🇦", "groupName": "A", "confederation": "CONCACAF" },
+  { "name": "Bolivia",         "shortName": "BOL", "flagEmoji": "🇧🇴", "groupName": "A", "confederation": "CONMEBOL" },
+  { "name": "Marruecos",       "shortName": "MAR", "flagEmoji": "🇲🇦", "groupName": "A", "confederation": "CAF" },
+
+  { "name": "Argentina",       "shortName": "ARG", "flagEmoji": "🇦🇷", "groupName": "B", "confederation": "CONMEBOL" },
+  { "name": "Canadá",          "shortName": "CAN", "flagEmoji": "🇨🇦", "groupName": "B", "confederation": "CONCACAF" },
+  { "name": "Chile",           "shortName": "CHI", "flagEmoji": "🇨🇱", "groupName": "B", "confederation": "CONMEBOL" },
+  { "name": "Albania",         "shortName": "ALB", "flagEmoji": "🇦🇱", "groupName": "B", "confederation": "UEFA" },
+
+  { "name": "México",          "shortName": "MEX", "flagEmoji": "🇲🇽", "groupName": "C", "confederation": "CONCACAF" },
+  { "name": "Uruguay",         "shortName": "URU", "flagEmoji": "🇺🇾", "groupName": "C", "confederation": "CONMEBOL" },
+  { "name": "Irak",            "shortName": "IRQ", "flagEmoji": "🇮🇶", "groupName": "C", "confederation": "AFC" },
+  { "name": "Ucrania",         "shortName": "UKR", "flagEmoji": "🇺🇦", "groupName": "C", "confederation": "UEFA" },
+
+  { "name": "Francia",         "shortName": "FRA", "flagEmoji": "🇫🇷", "groupName": "D", "confederation": "UEFA" },
+  { "name": "Australia",       "shortName": "AUS", "flagEmoji": "🇦🇺", "groupName": "D", "confederation": "AFC" },
+  { "name": "Guatemala",       "shortName": "GUA", "flagEmoji": "🇬🇹", "groupName": "D", "confederation": "CONCACAF" },
+  { "name": "Arabia Saudita",  "shortName": "KSA", "flagEmoji": "🇸🇦", "groupName": "D", "confederation": "AFC" },
+
+  { "name": "Alemania",        "shortName": "GER", "flagEmoji": "🇩🇪", "groupName": "E", "confederation": "UEFA" },
+  { "name": "Japón",           "shortName": "JPN", "flagEmoji": "🇯🇵", "groupName": "E", "confederation": "AFC" },
+  { "name": "Costa Rica",      "shortName": "CRC", "flagEmoji": "🇨🇷", "groupName": "E", "confederation": "CONCACAF" },
+  { "name": "Nueva Zelanda",   "shortName": "NZL", "flagEmoji": "🇳🇿", "groupName": "E", "confederation": "OFC" },
+
+  { "name": "España",          "shortName": "ESP", "flagEmoji": "🇪🇸", "groupName": "F", "confederation": "UEFA" },
+  { "name": "Bélgica",         "shortName": "BEL", "flagEmoji": "🇧🇪", "groupName": "F", "confederation": "UEFA" },
+  { "name": "Ecuador",         "shortName": "ECU", "flagEmoji": "🇪🇨", "groupName": "F", "confederation": "CONMEBOL" },
+  { "name": "Túnez",           "shortName": "TUN", "flagEmoji": "🇹🇳", "groupName": "F", "confederation": "CAF" },
+
+  { "name": "Brasil",          "shortName": "BRA", "flagEmoji": "🇧🇷", "groupName": "G", "confederation": "CONMEBOL" },
+  { "name": "Suiza",           "shortName": "SUI", "flagEmoji": "🇨🇭", "groupName": "G", "confederation": "UEFA" },
+  { "name": "República Dominicana", "shortName": "DOM", "flagEmoji": "🇩🇴", "groupName": "G", "confederation": "CONCACAF" },
+  { "name": "Camerún",         "shortName": "CMR", "flagEmoji": "🇨🇲", "groupName": "G", "confederation": "CAF" },
+
+  { "name": "Portugal",        "shortName": "POR", "flagEmoji": "🇵🇹", "groupName": "H", "confederation": "UEFA" },
+  { "name": "Ghana",           "shortName": "GHA", "flagEmoji": "🇬🇭", "groupName": "H", "confederation": "CAF" },
+  { "name": "Colombia",        "shortName": "COL", "flagEmoji": "🇨🇴", "groupName": "H", "confederation": "CONMEBOL" },
+  { "name": "Turquía",         "shortName": "TUR", "flagEmoji": "🇹🇷", "groupName": "H", "confederation": "UEFA" },
+
+  { "name": "Países Bajos",    "shortName": "NED", "flagEmoji": "🇳🇱", "groupName": "I", "confederation": "UEFA" },
+  { "name": "Corea del Sur",   "shortName": "KOR", "flagEmoji": "🇰🇷", "groupName": "I", "confederation": "AFC" },
+  { "name": "Venezuela",       "shortName": "VEN", "flagEmoji": "🇻🇪", "groupName": "I", "confederation": "CONMEBOL" },
+  { "name": "Egipto",          "shortName": "EGY", "flagEmoji": "🇪🇬", "groupName": "I", "confederation": "CAF" },
+
+  { "name": "Inglaterra",      "shortName": "ENG", "flagEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "groupName": "J", "confederation": "UEFA" },
+  { "name": "Senegal",         "shortName": "SEN", "flagEmoji": "🇸🇳", "groupName": "J", "confederation": "CAF" },
+  { "name": "Paraguay",        "shortName": "PAR", "flagEmoji": "🇵🇾", "groupName": "J", "confederation": "CONMEBOL" },
+  { "name": "México B",        "shortName": "MXB", "flagEmoji": "🇲🇽", "groupName": "J", "confederation": "CONCACAF" },
+
+  { "name": "Italia",          "shortName": "ITA", "flagEmoji": "🇮🇹", "groupName": "K", "confederation": "UEFA" },
+  { "name": "Irán",            "shortName": "IRN", "flagEmoji": "🇮🇷", "groupName": "K", "confederation": "AFC" },
+  { "name": "Perú",            "shortName": "PER", "flagEmoji": "🇵🇪", "groupName": "K", "confederation": "CONMEBOL" },
+  { "name": "Mali",            "shortName": "MLI", "flagEmoji": "🇲🇱", "groupName": "K", "confederation": "CAF" },
+
+  { "name": "Croacia",         "shortName": "CRO", "flagEmoji": "🇭🇷", "groupName": "L", "confederation": "UEFA" },
+  { "name": "Polonia",         "shortName": "POL", "flagEmoji": "🇵🇱", "groupName": "L", "confederation": "UEFA" },
+  { "name": "Serbia",          "shortName": "SRB", "flagEmoji": "🇷🇸", "groupName": "L", "confederation": "UEFA" },
+  { "name": "Nigeria",         "shortName": "NGA", "flagEmoji": "🇳🇬", "groupName": "L", "confederation": "CAF" }
+]
